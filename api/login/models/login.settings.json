@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logins",
+  "info": {
+    "name": "login"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "password": {
+      "type": "password",
+      "maxLength": 7,
+      "required": true
+    },
+    "rol": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
